@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PDF & Image Compressor</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- PDF-lib -->
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.15.0/dist/pdf-lib.min.js"></script>
+  <!-- Image compression library -->
+  <script src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>File Compressor (PDF & Images)</h1>
+
+    <section class="compressor-section">
+      <h2>PDF Compressor</h2>
+      <div id="pdf-drop" class="drop-area">
+        <p>Drag & drop PDF files here or <button id="pdf-file-select">browse</button></p>
+        <input type="file" id="pdf-input" accept="application/pdf" multiple hidden>
+      </div>
+      <div id="pdf-list"></div>
+      <button id="pdf-compress-btn" disabled>Compress PDFs</button>
+    </section>
+
+    <section class="compressor-section">
+      <h2>Image Compressor</h2>
+      <div id="img-drop" class="drop-area">
+        <p>Drag & drop image files here or <button id="img-file-select">browse</button></p>
+        <input type="file" id="img-input" accept="image/*" multiple hidden>
+      </div>
+      <div id="img-list"></div>
+      <button id="img-compress-btn" disabled>Compress Images</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

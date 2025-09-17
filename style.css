@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+}
+.compressor-section {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.drop-area {
+  border: 2px dashed #007bff;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.2s;
+}
+.drop-area.highlight {
+  background: #e0f7ff;
+}
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:disabled {
+  background: #aaa;
+  cursor: default;
+}
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
